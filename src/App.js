@@ -1,28 +1,30 @@
 import Header from "./components/Header";
+import { Footer } from "./components/Footer";
+import Card from "./components/Card";
 
 function App() {
   const array = [
     {
       title: "Watch",
-      img: "",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
       price: 500,
       mrp: 700,
     },
     {
       title: "Pen",
-      img: "",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
       price: 500,
       mrp: 700,
     },
     {
       title: "Shoes",
-      img: "",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
       price: 500,
       mrp: 700,
     },
     {
       title: "Belt",
-      img: "",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
       price: 500,
       mrp: 700,
     },
@@ -34,37 +36,77 @@ function App() {
     },
     {
       title: "Bag",
-      img: "",
-      price: 500,
-      mrp: 700,
-    },
-  ];
-
-  const array2 = [
-    {
-      title: "Watch",
-      img: "",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
       price: 500,
       mrp: 700,
     },
     {
-      title: "Pen",
-      img: "",
+      title: "Belt",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
+      price: 500,
+      mrp: 700,
+    },
+    {
+      title: "Wallet",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
+      price: 500,
+      mrp: 700,
+    },
+    {
+      title: "Bag",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
+      price: 500,
+      mrp: 700,
+    },
+    {
+      title: "Belt",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
+      price: 500,
+      mrp: 700,
+    },
+    {
+      title: "Wallet",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
+      price: 500,
+      mrp: 700,
+    },
+    {
+      title: "Bag",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
+      price: 500,
+      mrp: 700,
+    },
+    {
+      title: "Belt",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
+      price: 500,
+      mrp: 700,
+    },
+    {
+      title: "Wallet",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
+      price: 500,
+      mrp: 700,
+    },
+    {
+      title: "Bag",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_a4wRSrGTFiRgquuMzhDxtMr5-PBmMCyhiA&s",
       price: 500,
       mrp: 700,
     },
   ];
   return (
-    <div className="d-flex">
-      {array.map((item) => {
-        item.discount = 10;
-        return <Header item={item} />;
-      })}
-
-      {array2.map((item) => (
-        <Header item={item} />
-      ))}
-    </div>
+    <>
+      <Header />
+      <br/>
+      <div className="d-flex card">
+        {array.map((item) => {
+          item.discount = 10;
+          return <Card item={item} />;
+        })}
+      </div>
+      <Footer />
+    </>
   );
 }
 

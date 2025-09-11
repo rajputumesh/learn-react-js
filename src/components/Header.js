@@ -1,15 +1,26 @@
 import React from "react";
 
-const Header = ({ item }) => {
+const Header = () => {
   return (
-    <div className="box">
-      <img src={item.img} />
-      <hr />
+    <div className="navbar d-flex">
       <div>
-        <h4>{item.title}</h4>
-        <p>
-          <s>{item.mrp}</s> {item.discount}% - {item.price}
-        </p>
+        <img src="./logo192.png" />
+      </div>
+      <div>
+        <ul className="menu d-flex">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Service</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
   );
